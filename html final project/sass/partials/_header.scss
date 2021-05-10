@@ -1,0 +1,704 @@
+header{
+   
+    .header-top{
+        position: relative;
+        background-color: $color-red;
+        
+        &::after{
+            background: #2C2B5E;
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: "";
+            height: 100%;
+            width: 36%;
+            z-index: 1;
+        }                   
+        &::before{
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background-color: $color-blue;
+          transform: rotate(45deg);
+          bottom: 20px;
+          right: 32%;
+        }
+        .container{
+           
+           &::before{
+             content: "";
+             position: absolute;
+             height: 110px;
+             width: 10px;
+             background-color: #fff;
+             transform: rotate(-45deg);
+             right: 37%;
+             bottom: -20px;
+             z-index: 5;
+           }
+
+           &::after{
+            content: "";
+            position: absolute;
+            width: 54px;
+            height: 68px;
+            background-color: $color-blue;
+            top: 0px;
+            right: 31%;
+            z-index: -1;
+           }
+            .row{
+                .custom-navbar{
+                    padding: 0px;
+                    display: flex;
+                    .col-md-8{                                     
+                        .custom-content{
+                            background-color: $color-red;
+                            height: 68px;
+                            p{
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: $font-sans;
+                                color: #fff;
+                                text-transform: uppercase;
+                                line-height: 68px;
+                                position: relative;
+                                display: inline-block;
+                                left: 165px;
+                                z-index: 4;
+                            }
+                        }
+                    }
+                    .col-md-4{  
+    
+                        .custom-content2{
+                            background-color: $color-blue;
+                            text-align: right;
+                            word-spacing: 30px;
+                            position: relative;
+                            z-index: 2;
+                            
+                            a{
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: $font-sans;
+                                color: #fff;
+                                text-transform: uppercase;
+                                line-height: 68px;                        
+                                text-decoration: none;
+                                padding-left: 7px;
+                                position: relative;
+                                transition: all 0.3s linear;
+                                &:hover{
+                                      color: $color-red;
+                                }
+                            }
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+    .header-bottom{
+       
+        background: transparent none repeat scroll 0 0;
+        .container{
+            .row{
+                .custom-second-navbar{
+                    display: flex;
+                    .col-md-3{
+                        .logo{
+                            display: inline-block;
+                            img{
+                                padding-top: 40px;
+                                padding-bottom: 33px;
+                            }
+                        }
+                    }
+                    .col-md-9{
+                        text-align: right;
+                        .custom-nav-container{                            
+                            display: inline-block;
+                            text-align: right;
+                            .custom-nav-item{
+                                transition: all 0.3s linear;
+                                display: inline-block;
+                                text-align: right;
+                               .custom-nav-link{
+                                color: #303030;
+                                font-size: 16px;
+                                line-height: 130px;
+                                display: inline-block;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                padding: 0 15px;
+                                font-weight: 600;
+                                transition: all 0.3s linear;
+                                
+                               }
+                              
+                               .custom-dropdown-menu{
+                                   position: relative;
+                                    .custom-nav-dropdown{
+                                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+                                        width: 185px;
+                                        background-color: #fff;
+                                        z-index: 999;
+                                        transition: all 0.3s linear;
+                                        text-align: left;
+                                        padding: 10px 18px;
+                                        position: absolute;
+                                        top: 100%;
+                                        left: 0;
+                                        display: none;
+                                       
+                                        li{
+                                            display: block;
+                                            margin: 0;
+                                            padding: 7px 0;
+                                        
+                                            a{
+                                                color: #252525;
+                                                display: block;
+                                                font-size: 14px;
+                                                line-height: 26px;
+                                                padding: 0;
+                                                text-transform: capitalize;
+                                                text-decoration: none;
+                                                transition: all 0.3s linear;
+                                                margin: 0;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                       
+                                    }
+                               }
+                               &:hover  {
+                                .custom-dropdown-menu{
+                                   .custom-nav-dropdown{
+                                      display: block;
+                                    }
+                                }
+                                }
+                            }
+                            .custom-icon{
+                                display: inline-block;
+                                .nese{                                   
+                                    border-radius: 50%;
+                                    background-color: $color-blue;
+                                    transition: all 0.3s linear;
+                                    &:hover{
+                                        background-color: $color-red;
+                                    }
+                                   a{
+                                       i{
+                                           font-size: 14px;
+                                           padding: 8px;
+                                           font-weight: 600;
+                                           color: #fff;
+                                        }
+                                   }
+                                }                              
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    } 
+    
+    // .fixed-top{
+    //     background-color: rgba(255, 255, 255, 0.8);
+    //     transition: all 0.6s linear;
+    //     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+        
+    //     top: 0;
+    //     width: 100%;
+    //     z-index: 999;
+    //     left: 0;
+    //     padding: 0;
+    // }
+}
+
+//top-ucun qismen bottom
+@media screen and ( max-width:767px){
+    .header-top{
+        padding: 10px 0;
+        &::after{
+           width: 100% !important;           
+        }
+        &::before{
+         
+        }
+        .container{
+           margin: 0px;
+           &::before{
+               display: none !important;
+           }
+           &::after{
+
+           }
+           
+            .row{
+                .custom-navbar{
+                   
+                    .col-md-8{                                     
+                        .custom-content{
+                            text-align: center !important;
+                            p{
+                                font-size: 12px !important;
+                                text-align: center !important;
+                                line-height: 24px !important;
+                            }
+                        }
+                    }
+                    .col-md-4{  
+    
+                        .custom-content2{
+                            text-align: center;
+                            a{
+                                font-size: 12px !important;   
+                                line-height: 24px !important;
+                                top: 30px;
+                                right: 130px;
+                            }
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom{
+       
+        .container{
+            max-width: 750px;
+            .row{
+                .custom-second-navbar{
+                    
+                    .col-xs-6{
+                         width: 50%;
+                        .logo{
+                            
+                            img{
+                                
+                            }
+                        }
+                    }
+                    .col-md-9{
+                        width: 50%;
+                        .custom-nav-container{
+                            margin-right: 48px;
+                            .custom-nav-item{
+                                display: none !important;
+                               .custom-nav-link{
+                                
+                               }
+                              
+                               .custom-dropdown-menu{
+                                   
+                                    .custom-nav-dropdown{
+                                 
+                                       
+                                        li{
+                                            
+                                        
+                                            a{
+                                           
+                                            }
+                                        }
+                                       
+                                    }
+                               }
+                               &:hover  {
+                                .custom-dropdown-menu{
+                                   .custom-nav-dropdown{
+                                      
+                                    }
+                                }
+                              }
+                            }
+                            .custom-icon{
+                                
+                                .nese{                                   
+                                    
+                                    &:hover{
+                                        
+                                    }
+                                   a{
+                                       i{
+                                           
+                                        }
+                                   }
+                                }                              
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
+@media screen and(max-width:450px){
+    .header-top{
+        
+        &::after{
+            
+        }
+        &::before{
+         
+        }
+        .container{
+          
+           &::before{
+               
+           }
+           &::after{
+              
+           }
+           
+            .row{
+                .custom-navbar{
+                    
+                    .col-xs-12{                                     
+                        .custom-content{
+                            
+                            p{
+                             
+                            }
+                        }
+                    }
+                    .col-md-4{  
+    
+                        .custom-content2{
+                            
+                            a{
+                                right: 120px !important;
+                            }
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+}
+
+//bottom-ucun
+@media screen and(min-width:768px){
+    .header-bottom{
+       
+        .container{
+            width: 750px;
+            .row{
+                .custom-second-navbar{
+                    
+                    .col-sm-3{
+                         width: 25%;
+                        .logo{
+                            
+                            img{
+                                
+                            }
+                        }
+                    }
+                    .col-sm-9{
+                        width: 75%;
+                        .custom-nav-container{
+                            
+                            .custom-nav-item{
+                                
+                               .custom-nav-link{
+                                
+                               }
+                              
+                               .custom-dropdown-menu{
+                                   
+                                    .custom-nav-dropdown{
+                                 
+                                       
+                                        li{
+                                            
+                                        
+                                            a{
+                                           
+                                            }
+                                        }
+                                       
+                                    }
+                               }
+                               &:hover  {
+                                .custom-dropdown-menu{
+                                   .custom-nav-dropdown{
+                                      
+                                    }
+                                }
+                              }
+                            }
+                            .custom-icon{
+                                
+                                .nese{                                   
+                                    
+                                    &:hover{
+                                        
+                                    }
+                                   a{
+                                       i{
+                                           
+                                        }
+                                   }
+                                }                              
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
+//bottom-ucun
+@media screen and(min-width:992px){
+    .header-bottom{
+       
+        .container{
+            width: 970px;
+            .row{
+                .custom-second-navbar{
+                    
+                    .col-md-3{
+                        width: 25%;
+                        .logo{
+                            
+                            img{
+                                
+                            }
+                        }
+                    }
+                    .col-md-9{
+                        width: 75%;
+                        .custom-nav-container{
+                            
+                            .custom-nav-item{
+                                
+                               .custom-nav-link{
+                                
+                               }
+                              
+                               .custom-dropdown-menu{
+                                   
+                                    .custom-nav-dropdown{
+                                 
+                                       
+                                        li{
+                                            
+                                        
+                                            a{
+                                           
+                                            }
+                                        }
+                                       
+                                    }
+                               }
+                               &:hover  {
+                                .custom-dropdown-menu{
+                                   .custom-nav-dropdown{
+                                      
+                                    }
+                                }
+                              }
+                            }
+                            .custom-icon{
+                                
+                                .nese{                                   
+                                    
+                                    &:hover{
+                                        
+                                    }
+                                   a{
+                                       i{
+                                           
+                                        }
+                                   }
+                                }                              
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
+//her ikisi ucun
+@media screen and (min-width:1200px){
+    .header-top{
+        
+        &::after{
+           
+           
+        }
+        &::before{
+          
+        }
+        .container{
+           width: 1200px;
+           &::before{
+             
+           }
+
+           &::after{
+
+           }          
+            .row{
+                .custom-navbar{
+                   
+                    .col-md-8{                                     
+                        .custom-content{
+                            
+                            p{
+                                
+                            }
+                        }
+                    }
+                    .col-md-4{  
+    
+                        .custom-content2{
+                            
+                            a{
+                                
+                                
+                            }
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bottom{
+       
+        .container{
+            width: 1200px;
+            .row{
+                .custom-second-navbar{
+                    
+                    .col-md-3{
+                        .logo{
+                            
+                            img{
+                                
+                            }
+                        }
+                    }
+                    .col-md-9{
+                        .custom-nav-container{
+                            
+                            .custom-nav-item{
+                                
+                               .custom-nav-link{
+                                
+                               }
+                              
+                               .custom-dropdown-menu{
+                                   
+                                    .custom-nav-dropdown{
+                                 
+                                       
+                                        li{
+                                            
+                                        
+                                            a{
+                                           
+                                            }
+                                        }
+                                       
+                                    }
+                               }
+                               &:hover  {
+                                .custom-dropdown-menu{
+                                   .custom-nav-dropdown{
+                                      
+                                    }
+                                }
+                              }
+                            }
+                            .custom-icon{
+                                
+                                .nese{                                   
+                                    
+                                    &:hover{
+                                        
+                                    }
+                                   a{
+                                       i{
+                                           
+                                        }
+                                   }
+                                }                              
+                            }
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
+
+//top-ucun
+@media screen and (max-width:575px){
+    .header-top{
+        
+        &::after{
+           
+           
+        }
+        &::before{
+          
+        }
+        .container{
+           
+           &::before{
+             
+           }
+
+           &::after{
+
+           }          
+            .row{
+                .custom-navbar{
+                   
+                    .col-xs-12{   
+                        width: 100%;                                  
+                        .custom-content{
+                            
+                            p{
+                                font-size: 6px !important;
+                                text-align: left !important;
+                            }
+                        }
+                    }
+                    .col-xs-12{  
+                         width: 100%;
+                        .custom-content2{
+                            
+                            a{
+                                right: 30px;
+                                font-size: 10px !important;
+                            }
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,142 @@
+footer{
+    #main{
+        padding: 85px 0px;
+        display: block;
+        .footer-part{
+            .logo{
+                padding-bottom: 25px;
+                a{
+                    color: #606060;
+                    
+                }
+            }
+            h3{
+                font-size: 18px;
+                font-weight: 700;
+                font-family: 'Open Sans', sans-serif;
+                color: #606060;
+                margin-bottom: 45px;
+                position: relative;
+                &::before{
+                    background: #606060 none repeat scroll 0 0;
+                    bottom: -13px;
+                    content: "";
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    width: 45px;
+                }
+                &::after{
+                    background: #606060 none repeat scroll 0 0;
+                    bottom: -10px;
+                    content: "";
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    width: 57px;
+                }
+            }
+            ul{
+                list-style: none;
+                margin-top: 25px;
+                li{
+                    font-family: "Open Sans",sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    a{
+                        color: #606060;
+                        text-decoration: none;
+                        line-height: 23px;
+                        transition: all 0.3s ease 0s;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+            p{
+                color: #7d7d7d;
+                font-family: "Open Sans",sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 23px;
+                margin-bottom: 16px;
+            }
+        .social{
+             ul{
+                 margin-top: 25px;
+                 display: flex;
+                 li{
+                    color: #7d7d7d;
+                    font-family: "Open Sans",sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    a{
+                        border: 1px solid #DADADA;
+                        color: #7D7D7D;
+                        height: 28px;
+                        width: 28px;
+                        border-radius: 50%;
+                        display: block;
+                        text-align: center;
+                        line-height: 26px;
+                        margin-right: 13px;
+                        transition: all 0.5s ease 0s;
+                        &:hover{
+                            background-color: red;
+                            color:white
+                        }
+                        i{
+                            display: inline-block;
+                        }
+                    }
+                    }
+                }
+            }    
+        }
+    }
+    #copyright{
+        background-color: #2C2B5E;
+        p{
+            text-align: center;
+            font-size: 14px;
+            line-height: 60px;
+            margin-bottom: 2px;
+            font-family: 'Open Sans', sans-serif;
+            color: #c7c7c7;
+            a{
+                color: #fff;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    footer{
+        h2{
+            font-size: 26px !important;
+        }
+    }   
+}
+
+@media screen and (max-width:767px){
+    footer{
+        button{
+            position: relative !important;
+            width: 100%;
+        }
+        h2{
+            font-size: 19px !important;
+        }
+        .footer-part{
+        padding-left: 25px;
+        }
+    }   
+}

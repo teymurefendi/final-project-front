@@ -1,0 +1,102 @@
+main{
+    #custom-login{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        .container{
+            .row{
+                .col-md-6{
+                    text-align: center;
+                    
+                    .login-area{
+                        .login-cont{
+                            background: #f5f5f5 none repeat scroll 0 0;
+                            overflow: hidden;
+                            padding: 37px 40px;
+                            text-align: left;
+                            .login-title{
+                                text-align: center;
+                                margin-bottom: 30px;
+                                h2{
+                                    color: #444;
+                                    font-size: 30px;
+                                    margin-bottom: 15px;
+                                    text-transform: capitalize;
+                                    font-weight: 700;
+                                }
+                                span{
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    
+                                }
+                            }
+                            .login-form{
+                                form{
+                                    input{
+                                        background: #ffffff none repeat scroll 0 0;
+                                        border-radius: 3px;
+                                        color: #666666;
+                                        margin-bottom: 20px;
+                                        font-size: 14px;
+                                        height: 40px;
+                                        padding-left: 10px;
+                                        width: 100%;
+                                        box-shadow: none;
+                                        border: none;
+                                    }
+                                    .button-cont{
+                                        .login-ending{
+                                            padding-top: 20px;
+                                            #remember{
+                                                height: 15px;
+                                                margin: 0;
+                                                position: relative;
+                                                top: 1px;
+                                                width: 17px;
+                                            }
+                                            label{
+                                                color: #606060;
+                                                font-size: 15px;
+                                                font-weight: 400;
+                                            }
+                                            a{
+                                                color: $color-red;
+                                                float: right;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                transition: all 0.3s linear;
+                                                &:hover{
+                                                    color: $color-blue;
+                                                }
+                                            }
+                                        }
+                                        button{
+                                            background: transparent none repeat scroll 0 0;
+                                            border: 1px solid $color-red;
+                                            border-radius: 30px;
+                                            color: $color-red;
+                                            font-size: 14px;
+                                            margin-top: 40px;
+                                            padding: 12px 36px;
+                                            text-transform: uppercase;
+                                            display: inline-block;
+                                            font-family: $font-sans;
+                                            font-weight: 700;
+                                            overflow: hidden;
+                                            position: relative;
+                                            z-index: 23;
+                                            transition: all 0.3s linear;
+                                            &:hover{
+                                                background-color: $color-red;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

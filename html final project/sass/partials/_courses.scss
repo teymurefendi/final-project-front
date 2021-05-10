@@ -1,0 +1,353 @@
+main{
+    #search-course{
+        padding-top: 150px;
+        .container{
+           
+            .row{
+                .col-xs-12{
+                    .course-title{
+                        h3{
+                            background: $color-blue;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 22px;
+                            font-family: $font-sans;
+                            padding: 16px 93px 16px 27px;
+                            display: inline-block;
+                            position: relative;
+                            &::after{
+                                background: #fff none repeat scroll 0 0;
+                                content: "";
+                                height: 85px;
+                                position: absolute;
+                                right: -26px;
+                                top: -28px;
+                                transform: rotate(-30deg);
+                                width: 45px;
+                            }
+                        }
+                    }
+                    .course-form{
+                        #search{
+                            position: relative;
+                            margin-bottom: 50px;
+                            input{
+                                width: 100%;
+                                border: 1px solid #EBEBEB;
+                                background: #F8F8F8;
+                                padding: 14px 195px 14px 25px;                               
+                            }
+                            button{
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                background: $color-red;
+                                color: #fff;
+                                height: 51px;
+                                width: 185px;
+                                content: "";
+                                color: #fff;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-family: $font-sans;
+                                font-size: 18px;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #offered1{
+        position: relative;
+        background: none;
+        padding-top: 0px;
+        padding-bottom: 100px;
+        text-align: center;
+        &::after{
+           display: none;
+        }
+           .container{
+               
+               
+               .row{                   
+                   .col-md-4{
+                    margin-bottom: 70px;
+                       .course-cont{
+                           position: relative;
+                           z-index: 4;
+                           .course-img{
+                               position: relative;                           
+                               a{
+                                   img{
+                                     position: relative;
+                                     width: 100%;
+                                     display: block;
+                                     line-height: 0;                                                               
+                                   }
+                                   .img-hover{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(236, 28, 35, 0.5);
+                                    opacity: 0;
+                                    transition: all 0.3s linear;
+                                    i{
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50% -50%);
+                                        color: white;
+                                        transition: all 0.3s linear;
+                                        &:hover{
+                                            color: #2c2b5e;
+                                        }
+                                    }
+                                }
+                                 &:hover{
+                                     .img-hover{
+                                         opacity: 1;
+                                     }
+                                 }
+                               }
+                           }
+                           .course-content{
+                               background-color: #fff;
+                               padding: 22px 30px 25px;
+                               text-align: left;
+                               box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+                               h3{
+                                margin-bottom: 10px;
+                                   a{
+                                    font-size: 22px;
+                                    color: $color-black;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                    font-family: $font-sans;
+                                   text-decoration: none;
+                                   transition: all 0.3s linear;
+                                   &:hover{
+                                       color: $color-red;
+                                   }
+                                   }
+                               }
+                               p{
+                                   font-size: 14px;
+                                   line-height: 24px;
+                                   margin-bottom: 20px;
+                                   color: #606060;
+                                   font-family: $font-sans;
+                                   font-weight: 600;
+                               }
+                               #elave{
+                                   font-size: 14px;
+                                   padding: 12px 16px;
+                                   text-decoration: none;
+                                   transition: all 0.3s linear;
+                                   font-weight: 700;
+                                   font-family: $font-sans;
+                                   color: #fff;
+                                   text-transform: uppercase;
+                                   background-color: $color-red;
+                                   display: inline-block;
+                                   position: relative;
+                                   &:hover{
+                                       background-color: $color-blue;
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .hidden-sm {
+        display: none !important;
+}
+}
+
+@media screen and(max-width:767px){
+    #search-course{
+        padding: 80px 0;
+        .container{
+            
+            .row{
+                .col-xs-12{
+                    width: 100% !important;
+                    .course-title{
+                        h3{
+                            font-size: 15px !important;
+                            &::after{
+                                
+                            }
+                        }
+                    }
+                    .course-form{
+                        #search{
+                            
+                            input{
+                                  display: inline-block;                            
+                            }
+                            button{
+                                display: inline-block;
+                                position: inherit !important;
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #offered1{
+       
+        &::after{
+           
+        }
+           .container{
+               
+               .custom-first{
+                   
+                    .col-xs-12{
+                       
+                        .custom-title{
+                            
+                            img{
+                               
+                            }
+                            h2{
+                               
+    
+                            }
+                        }
+                    }
+               }
+               .row{                   
+                   .col-sm-6{
+                   
+                       .course-cont{
+                          
+                           .course-img{
+                                                         
+                               a{
+                                   img{
+                                                                                                
+                                   }
+                                   .img-hover{
+                                   
+                                    i{
+                                       
+                                        &:hover{
+                                           
+                                        }
+                                    }
+                                }
+                                 &:hover{
+                                     .img-hover{
+                                        
+                                     }
+                                 }
+                               }
+                           }
+                           .course-content{
+                              
+                               h3{
+                               font-size: 15px !important;
+                                   a{
+                                    
+                                   &:hover{
+                                      
+                                   }
+                                   }
+                               }
+                               p{
+                                   
+                               }
+                               #elave{
+                                  
+                                   &:hover{
+                                      
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       }
+}
+
+@media screen and(max-width:576px){
+    #offered1{
+       
+        &::after{
+           
+        }
+           .container{
+               
+            width: 100% !important; 
+               .row{  
+                                   
+                   .col-xs-12{
+                   
+                   margin-bottom: 30px !important;
+                       .course-cont{
+                        
+                           .course-img{
+                                                         
+                               a{
+                                   img{
+                                                                                                
+                                   }
+                                   .img-hover{
+                                   
+                                    i{
+                                       
+                                        &:hover{
+                                           
+                                        }
+                                    }
+                                }
+                                 &:hover{
+                                     .img-hover{
+                                        
+                                     }
+                                 }
+                               }
+                           }
+                           .course-content{
+                              
+                               h3{
+                               
+                                   a{
+                                    
+                                   &:hover{
+                                      
+                                   }
+                                   }
+                               }
+                               p{
+                                   
+                               }
+                               #elave{
+                                  
+                                   &:hover{
+                                      
+                                   }
+                               }
+                           }
+                       }
+                   }
+               }
+           }
+       }
+}
